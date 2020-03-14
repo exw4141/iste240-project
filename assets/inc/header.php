@@ -14,7 +14,7 @@
 
     <?php
         // Run required JavaScript functions on proper pages 
-        if ($filename == "main") {
+        if ($filename == "index") {
             echo "<body onload='runSlideshow()'>";            
         }
         else if ($filename == "survey") {
@@ -32,7 +32,7 @@
                     <i class="fa fa-bars"></i>
                 </a>
                 <?php
-                    if ($filename == "main") {
+                    if ($filename == "index") {
                         echo "<a href='#'>Home</a>";
                     }
                     else {
