@@ -51,10 +51,10 @@
     }
 
 	// Send user input to DB
-	if ($mysqli) {
+	if ($conn) {
 		if (isset($_GET['name']) && isset($_GET['comment'])) {
 			if($_GET['name'] != '' && $_GET['comment'] != '') {
-				$stmt=$mysqli->prepare("INSERT INTO chicagoComments (name, comment) VALUES (?, ?)");
+				$stmt=$conn->prepare("INSERT INTO chicagoComments (name, comment) VALUES (?, ?)");
 				$stmt->bind_param("ss", $name, $comment);
 
 				$name = sanitize($_GET['name']);
@@ -64,7 +64,7 @@
 			} //end of if to make sure data is sent using $_GET
 		} //end of isset
 		$sql = 'SELECT name, comment FROM chicagoComments';
-		$res=$mysqli->query($sql);
+		$res=$conn->query($sql);
 
 		// Display comments returned from query in a HTML table
 		if($res) {
