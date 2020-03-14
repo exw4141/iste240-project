@@ -127,7 +127,7 @@
             Your invaluable feedback has been submitted. It will be used to help us make major improvements 
             to our site as we add new content. We hope you enjoyed your stay!
         </p>
-        <button type="button" onclick="window.location.href='http://serenity.ist.rit.edu/~exw4141/240/project2/main.php'">Return Home</button>
+        <button type="button" onclick="window.location.href='https://iste240-project.herokuapp.com/'">Return Home</button>
     
         <footer>
             <br />
