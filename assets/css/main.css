@@ -341,28 +341,6 @@ table, th, td {
     margin: auto;
 }
 
-#me {
-    display: block;
-    margin: auto;
-    width: 25%;
-}
-
-#about {
-    padding-left: 7%;
-    padding-right: 7%;
-    font-size: 14pt;
-}
-
-/* Grading CSS */
-#grading {
-    width: 90%;
-    margin: auto;
-}
-
-.grading-header {
-    text-align: center;
-}
-
 /* CSS for Google Map links */
 .map {
     color: black;
