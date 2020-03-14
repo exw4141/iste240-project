@@ -3,7 +3,7 @@
     $title = "Chicago";
     $html_url = "https://validator.w3.org/nu/?doc=https%3A%2F%2Fiste240-project.herokuapp.com%2F";
     $css_url = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fiste240-project.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en";
-    $filename = "main";
+    $filename = "index";
 
     include $path."assets/inc/header.php";
 ?>
