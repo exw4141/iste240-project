@@ -36,7 +36,7 @@
                         echo "<a href='#'>Home</a>";
                     }
                     else {
-                        echo "<a href=''>Home</a>";
+                        echo "<a href='index.php'>Home</a>";
                     }
 
                     if ($filename == "attractions") {
