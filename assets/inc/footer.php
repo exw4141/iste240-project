@@ -22,7 +22,7 @@
                 echo "<a class='validator' href='$html_url' target='_blank'><img src='assets/images/html.png' alt='HTML Logo' title='HTML Validator' /></a>";
                 echo "<a class='validator' href='$css_url' target='_blank'><img src='assets/images/css.png' alt='CSS Logo' title='CSS Validator' /></a>";
                 echo "<br />";
-                echo "<span id='update-time'>Last updated: ".date("F d Y H:i:s", filemtime($filename.".php")).'</span>';
+                echo "<span id='update-time'>Last updated: ".date("F d Y H:i:s", filemtime($filename.".php")).' UTC</span>';
             ?>
         </footer>
     </body>
