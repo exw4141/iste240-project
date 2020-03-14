@@ -25,7 +25,7 @@
 
     <div id="modal">
         <span id="close-modal" onclick="closeImageModal()">&times;</span>
-        <img id="modal-image" />
+        <img id="modal-image" alt="" src="" />
         <div id="caption"></div>
     </div>
 
