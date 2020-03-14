@@ -67,7 +67,7 @@
 		$res=$conn->query($sql);
 
 		// Display comments returned from query in a HTML table
-		if($res) {
+		if($res && $res->num_rows > 0) {
 			echo "<h2>Comments</h2>";
 			echo "<table id='comment-table'>";
 			echo "<tr>";
