@@ -1,0 +1,21 @@
+body {
+    background-color: lightblue;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+img {
+    max-width: 40%;
+}
+
+figcaption {
+    font-size: 10pt;
+}
+
+.img-citation {
+    font-size: 8pt;
+}
+
+#update-time {
+    font-size: 10pt;
+}
