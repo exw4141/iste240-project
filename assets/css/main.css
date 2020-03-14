@@ -1,0 +1,426 @@
+/* Base CSS */
+body {
+    margin: 0;
+    background-color: lightblue;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    position: relative;
+    background-color: rgba(245, 245, 245, 0.700);
+}
+
+#flag {
+    display: inline-block;
+    max-width: 7%;
+    padding: 10px;
+}
+
+#topnav {
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    transform: translateY(-50%);
+    display: flex;
+    overflow: hidden;
+    width: 90%;
+    padding: 0;
+}
+
+#topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 24px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20pt;
+    flex: 1;
+    transition: 0.3s;
+}
+
+#topnav a:hover {
+    background-color: black;
+    color: lightblue;
+}
+
+#topnav .icon {
+    display: none;
+}
+
+/* Homepage (main.php) CSS */
+#homepage-banner {
+    background-image: url('../images/skyline.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 475px;
+}
+
+#banner-title {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 48pt;
+    top: 2%;
+    background: rgba(245, 245, 245, 0.550);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#banner-wrapper {
+    text-align: center;
+}
+
+#homepage-description {
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 20pt;
+}
+
+.slide-image {
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+
+/* CSS for main content pages */
+.whole-entry {
+    display: flex;
+}
+
+.description-wrapper {
+    padding: 20px;
+    flex: 1;
+}
+
+.description {
+    font-size: 14pt;
+}
+
+.description-figure {
+    flex: 1;
+}
+
+.description-img {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+figcaption {
+    text-align: center;
+}
+
+
+/* Banner CSS */
+#attractions-banner {
+    background-image: url('../images/navy-pier.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+
+#dining-banner {
+    background-image: url('../images/wildberry.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+
+#shopping-banner {
+    background-image: url('../images/900-michigan.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+
+#events-banner {
+    background-image: url('../images/ducky-derby.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+
+/* Footer CSS */
+footer {
+    text-align: center;
+    font-size: 10pt;
+}
+
+#footer-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#footer-links a:hover {
+    text-decoration: underline;
+}
+
+#update-time {
+    font-size: 10pt;
+}
+
+/* Gallery CSS */
+#gallery-wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.gallery-image {
+    cursor: pointer;
+    transition: 0.5s;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.gallery-image:hover {
+    opacity: 0.7;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+#modal-image {
+    display: block;
+    margin: auto;
+    height: 90%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#caption {
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+#modal-image, #caption {
+    animation-name: zoom-in;
+    animation-duration: 0.6s;
+    -webkit-animation-name: zoom-in;
+    -webkit-animation-duration: 0.6s;
+}
+
+@keyframes zoom-in {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+@-webkit-keyframes zoom-in {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+#close-modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: lightgray;
+    font-size: 14pt;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#close-modal:hover, #close-modal:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Survey form CSS */
+form {
+    max-width: 95%;
+    margin: auto;
+}
+
+#form-header {
+    border-bottom: 1px solid black;
+}
+
+/*
+Stylize the asterisks that denote that a field is required
+*/
+.required {
+    font-size: 20pt;
+    color: red;
+}
+
+/*
+Customizes the message telling the user a field is required. Originally hidden.
+*/
+.required-message {
+    font-size: 10pt;
+    color: red;
+    display: none;
+}
+
+#rating {
+    display: inline-block;
+    position: relative;
+    left: 3%;
+}
+
+#rating-slider {
+    text-align: center;
+}
+
+/* Comments form CSS */
+.input {
+    padding-bottom: 10px;
+}
+
+/* Center form */
+#form-div {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Collapse borders into one rather than be divided in typical table styling */
+#comment-table, .comment-table-header, .comment-table-def {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+#comment-table {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+.comment-table-header, .comment-table-def{
+    padding: 0.5em;
+}
+
+/* References CSS */
+table {
+    width: 95%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    vertical-align: top;
+}
+
+.ref-img {
+    width: 15%;
+    display: block;
+    margin: auto;
+}
+
+#me {
+    display: block;
+    margin: auto;
+    width: 25%;
+}
+
+#about {
+    padding-left: 7%;
+    padding-right: 7%;
+    font-size: 14pt;
+}
+
+/* Grading CSS */
+#grading {
+    width: 90%;
+    margin: auto;
+}
+
+.grading-header {
+    text-align: center;
+}
+
+/* CSS for Google Map links */
+.map {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.map:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 950px) {
+    .whole-entry {
+        display: block;
+    }
+    
+    .description-wrapper {
+        padding: 20px;
+        flex: none;
+    }
+    
+    .description {
+        font-size: 14pt;
+    }
+    
+    .description-figure {
+        flex: none;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    #topnav {
+        position: relative;
+        display: block;
+        transform: none;
+    }
+
+    #topnav a {
+        display: none;
+    }
+
+    #topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    #topnav.responsive {
+        position: relative;
+    }
+
+    #topnav.responsive a.icon {
+        display: block;
+    }
+
+    #topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: right;
+        flex: none;
+    }
+}
